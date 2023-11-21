@@ -3,19 +3,18 @@ class CalculatePrice{
         double addon_discount;
         double result;
 
-        if (extras >= 3)
-            addon_discount = 10;
-        else if (extras >= 5)
+        if (extras >= 5)
             addon_discount = 15;
+        else if (extras >= 3)
+            addon_discount = 10;
         else
             addon_discount = 0;
 
         if (discount > addon_discount)
             addon_discount = discount;
 
-        double discountedBasePrice = baseprice / 100.0 * (100 - addon_discount);
-
-        result = discountedBasePrice + specialprice + extraprice;
+        result = baseprice/100.0 * (100-discount) + specialprice
+                + extraprice/100.0 * (100-addon_discount);
 
         return result;
     }

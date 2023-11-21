@@ -15,6 +15,6 @@ class CalculatePriceTest {
 
         double price = calculatePrice.calculatePrice(baseprice, specialprice, extraprice, extras, discount);
 
-        Assertions.assertEquals(110,price);
+        Assertions.assertEquals(108,price);
     }
 }
