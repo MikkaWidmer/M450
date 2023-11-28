@@ -2,25 +2,23 @@
 
 Hier sind abstrakte Testfälle, die auf logischen Operatoren basieren:
 
-| Testfall | Beschreibung                                               |
-|----------|-----------------------------------------------------------|
-| 1        | Grenzfall: Kaufpreis = 15,000 CHF (5% Rabatt erwartet)    |
-| 2        | Grenzfall: Kaufpreis = 20,000 CHF (7% Rabatt erwartet)    |
-| 3        | Grenzfall: Kaufpreis = 25,000 CHF (8.5% Rabatt erwartet)  |
-
+| Testfall | Beschreibung                                             |
+|----------|----------------------------------------------------------|
+| 1        | Grenzfall: Kaufpreis = 15,000 CHF (5% Rabatt erwartet)   |
+| 2        | Grenzfall: Kaufpreis = 20,000 CHF (7% Rabatt erwartet)   |
+| 3        | Grenzfall: Kaufpreis = 25,000 CHF (8.5% Rabatt erwartet) |
+| 4        | Kaufpreis < 15,000 CHF (0% Rabatt erwartet)              |
+| 5        | Kaufpreis > 25,000 CHF (5% Rabatt erwartet)              |
 **Konkrete Testfälle:**
 
 Hier sind konkrete Testfälle mit bestimmten Eingabewerten:
 
 | Testfall | Kaufpreis | Erwarteter Rabatt |
-|----------|------------|---------------------|
-| 1        | 10,000 CHF | 0%                  |
-| 2        | 18,000 CHF | 5%                  |
-| 3        | 22,000 CHF | 7%                  |
-| 4        | 30,000 CHF | 8.5%                |
-| 5        | 15,000 CHF | 5%                  |
-| 6        | 20,000 CHF | 7%                  |
-| 7        | 25,000 CHF | 8.5%                |
+|----------|------------|-----------------|
+| 1        | 10,000 CHF | 0 CHF           |
+| 2        | 18,000 CHF | 900 CHF         |
+| 3        | 22,000 CHF | 1540 CHF        |
+| 4        | 30,000 CHF | 2550 CHF        |
 
 **Testfälle für eine Autovermietungswebseite:**
 
