@@ -4,13 +4,9 @@ Hier sind abstrakte Testfälle, die auf logischen Operatoren basieren:
 
 | Testfall | Beschreibung                                               |
 |----------|-----------------------------------------------------------|
-| 1        | Kaufpreis < 15,000 CHF                                    |
-| 2        | 15,000 CHF <= Kaufpreis <= 20,000 CHF                     |
-| 3        | 20,000 CHF < Kaufpreis < 25,000 CHF                       |
-| 4        | Kaufpreis >= 25,000 CHF                                   |
-| 5        | Grenzfall: Kaufpreis = 15,000 CHF (5% Rabatt erwartet)    |
-| 6        | Grenzfall: Kaufpreis = 20,000 CHF (7% Rabatt erwartet)    |
-| 7        | Grenzfall: Kaufpreis = 25,000 CHF (8.5% Rabatt erwartet)  |
+| 1        | Grenzfall: Kaufpreis = 15,000 CHF (5% Rabatt erwartet)    |
+| 2        | Grenzfall: Kaufpreis = 20,000 CHF (7% Rabatt erwartet)    |
+| 3        | Grenzfall: Kaufpreis = 25,000 CHF (8.5% Rabatt erwartet)  |
 
 **Konkrete Testfälle:**
 
@@ -82,4 +78,20 @@ Hier sind fünf wichtige funktionale Black-Box-Testfälle für eine Autovermietu
 | 5  | Stornierung einer Buchung | Buchung wird erfolgreich storniert | Stornierung schlägt fehl oder Auto bleibt als reserviert markiert | Fehler | Probleme mit Stornierungsfunktionalität oder Buchungsverwaltung |
 
 
-Diese Tabelle kann in Ihr Repository eingefügt werden und dient als praktisches Referenzwerkzeug für die Planung und Durchführung von Tests auf Ihrer Autovermietungsplattform.
+Übung 3
+ 
+### black-box
+| ID | Description | Expected | Actual | Result |
+|----|--------------|----------------------|----------------------|--------|
+| 1 | Konto erstellt | wenn man alle konten anzeigt sieht man das neue konto | Man sieht das neu erstellte Konto | PASSED |
+| 2 | Wechselkurs zwischen CHF und USD | 1 CHF = 1.134818 USD | 1 CHF = 1.134818 USD | PASSED |
+| 3 | eine falsche währung beim erstellen | es wird USD verwendet da es die währung nicht gibt | Die eingegebene W�hrung ist nicht bekannt, es wird USD verwendet | PASSED |
+
+### white-box
+- ()printBalance
+- ()deposit
+- ()deleteAccount
+- ()printAccountDetails
+
+### verbesserungen
+ui auswahl vergrössern dass man alles machen kann
