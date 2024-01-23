@@ -1,9 +1,9 @@
-name: Build and Test
+name: Java Backend CI/CD
 
 on:
   push:
     branches:
-      - main 
+      - main  # Ersetzen Sie dies durch den Namen Ihres Hauptbranches
 
 jobs:
   build:
@@ -17,7 +17,15 @@ jobs:
         uses: actions/setup-java@v2
         with:
           distribution: 'adopt'
-          java-version: '11'
+          java-version: '17'  # Ersetzen Sie dies durch Ihre Java-Version
 
       - name: Build with Maven
         run: mvn clean install
+
+      - name: Run Tests
+        run: mvn test
+
+      - name: Generate Test Reports
+        run: mvn surefire-report:report
+
+# Fügen Sie hier weitere Schritte hinzu, um z.B. Artefakte bereitzustellen oder andere notwendige Aktionen durchzuführen
