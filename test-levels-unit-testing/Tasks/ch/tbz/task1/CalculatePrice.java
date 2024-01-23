@@ -1,3 +1,5 @@
+package ch.tbz.task1;
+
 class CalculatePrice{
     double calculatePrice(double baseprice, double specialprice, double extraprice, int extras, double discount) {
         double addon_discount;
