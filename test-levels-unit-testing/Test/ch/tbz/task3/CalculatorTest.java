@@ -8,7 +8,7 @@ class CalculatorTest {
 
     @Test
     void add() {
-        assertEquals(6, Calculator.add(2, 4));
+        assertEquals(5, Calculator.add(2, 3));
     }
 
     @Test
